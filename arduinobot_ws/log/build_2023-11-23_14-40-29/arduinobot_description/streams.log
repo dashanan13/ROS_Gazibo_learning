@@ -1,0 +1,43 @@
+[0.194s] Invoking command in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description': CMAKE_PREFIX_PATH=/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description -- -j2 -l2
+[0.232s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.467s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.580s] -- Added test 'lint_cmake' to check CMake code style
+[0.584s] -- Added test 'xmllint' to check XML markup files
+[0.589s] -- Configuring done
+[0.612s] -- Generating done
+[0.621s] -- Build files have been written to: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description
+[0.788s] Invoked command in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description -- -j2 -l2
+[0.845s] Invoking command in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description': CMAKE_PREFIX_PATH=/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description
+[0.857s] -- Install configuration: ""
+[0.857s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes
+[0.858s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/horizontal_arm.STL
+[0.873s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/basement.STL
+[0.876s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/right_finger.STL
+[0.879s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/link.STL
+[0.881s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/vertical_drive_arm.STL
+[0.884s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/forward_drive_arm.STL
+[0.912s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/plate.STL
+[0.921s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/left_finger.STL
+[0.922s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/round_plate.STL
+[0.923s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/triangular_link.STL
+[0.925s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/base_plate.STL
+[0.936s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/claw_support.STL
+[0.941s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/servo_plate.STL
+[0.944s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/urdf
+[0.945s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/urdf/arduinobot_urdf.xacro
+[0.948s] -- Up-to-date: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/ament_index/resource_index/package_run_dependencies/arduinobot_description
+[0.949s] -- Up-to-date: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/ament_index/resource_index/parent_prefix_path/arduinobot_description
+[0.950s] -- Up-to-date: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.sh
+[0.950s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.dsv
+[0.950s] -- Up-to-date: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/path.sh
+[0.951s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/path.dsv
+[0.953s] -- Up-to-date: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/local_setup.bash
+[0.953s] -- Up-to-date: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/local_setup.sh
+[0.954s] -- Up-to-date: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/local_setup.zsh
+[0.954s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/local_setup.dsv
+[0.955s] -- Installing: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.dsv
+[0.957s] -- Up-to-date: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/ament_index/resource_index/packages/arduinobot_description
+[0.958s] -- Up-to-date: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/cmake/arduinobot_descriptionConfig.cmake
+[0.958s] -- Up-to-date: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/cmake/arduinobot_descriptionConfig-version.cmake
+[0.958s] -- Up-to-date: /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.xml
+[0.965s] Invoked command in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description

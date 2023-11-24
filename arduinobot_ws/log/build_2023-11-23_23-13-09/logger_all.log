@@ -1,0 +1,189 @@
+[3.158s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.158s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fe2382ed210>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fe2386e7730>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fe2386e7730>>)
+[3.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.301s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws'
+[3.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.320s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.320s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.322s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.322s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.322s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.322s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.323s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.323s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.323s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.323s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.324s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_description) by extensions ['ignore', 'ignore_ament_install']
+[3.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_description) by extension 'ignore'
+[3.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_description) by extension 'ignore_ament_install'
+[3.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_description) by extensions ['colcon_pkg']
+[3.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_description) by extension 'colcon_pkg'
+[3.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_description) by extensions ['colcon_meta']
+[3.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_description) by extension 'colcon_meta'
+[3.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_description) by extensions ['ros']
+[3.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_description) by extension 'ros'
+[3.334s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arduinobot_description' with type 'ros.ament_cmake' and name 'arduinobot_description'
+[3.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_py_examples) by extensions ['ignore', 'ignore_ament_install']
+[3.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_py_examples) by extension 'ignore'
+[3.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_py_examples) by extension 'ignore_ament_install'
+[3.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_py_examples) by extensions ['colcon_pkg']
+[3.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_py_examples) by extension 'colcon_pkg'
+[3.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_py_examples) by extensions ['colcon_meta']
+[3.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_py_examples) by extension 'colcon_meta'
+[3.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_py_examples) by extensions ['ros']
+[3.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_py_examples) by extension 'ros'
+[3.339s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arduinobot_py_examples' with type 'ros.ament_python' and name 'arduinobot_py_examples'
+[3.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.488s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.537s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install
+[3.557s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 367 installed packages in /opt/ros/humble
+[3.558s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.673s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'cmake_args' from command line to 'None'
+[3.673s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'cmake_target' from command line to 'None'
+[3.673s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.673s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[3.673s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'cmake_clean_first' from command line to 'False'
+[3.673s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'cmake_force_configure' from command line to 'False'
+[3.673s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'ament_cmake_args' from command line to 'None'
+[3.673s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[3.673s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.673s] DEBUG:colcon.colcon_core.verb:Building package 'arduinobot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description', 'merge_install': False, 'path': '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/src/arduinobot_description', 'symlink_install': False, 'test_result_base': None}
+[3.692s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'cmake_args' from command line to 'None'
+[3.692s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'cmake_target' from command line to 'None'
+[3.692s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.692s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[3.692s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'cmake_clean_first' from command line to 'False'
+[3.692s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'cmake_force_configure' from command line to 'False'
+[3.692s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'ament_cmake_args' from command line to 'None'
+[3.692s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[3.692s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.692s] DEBUG:colcon.colcon_core.verb:Building package 'arduinobot_py_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples', 'merge_install': False, 'path': '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/src/arduinobot_py_examples', 'symlink_install': False, 'test_result_base': None}
+[3.710s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.730s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.730s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/src/arduinobot_description' with build type 'ament_cmake'
+[3.730s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/src/arduinobot_description'
+[3.750s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.750s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.750s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.813s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/src/arduinobot_py_examples' with build type 'ament_python'
+[3.813s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduinobot_py_examples', 'ament_prefix_path')
+[3.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples/hook/ament_prefix_path.ps1'
+[3.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples/hook/ament_prefix_path.dsv'
+[3.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples/hook/ament_prefix_path.sh'
+[3.858s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.858s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.006s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description': CMAKE_PREFIX_PATH=/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description -- -j2 -l2
+[4.378s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/src/arduinobot_py_examples'
+[4.397s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.397s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description -- -j2 -l2
+[4.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description': CMAKE_PREFIX_PATH=/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description
+[4.577s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduinobot_description)
+[4.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_description
+[4.622s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description' for CMake module files
+[4.625s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description' for CMake config files
+[4.625s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduinobot_description', 'cmake_prefix_path')
+[4.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/hook/cmake_prefix_path.ps1'
+[4.670s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/hook/cmake_prefix_path.dsv'
+[4.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/hook/cmake_prefix_path.sh'
+[4.673s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/bin'
+[4.674s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/lib/pkgconfig/arduinobot_description.pc'
+[4.674s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/lib/python3.10/site-packages'
+[4.674s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/bin'
+[4.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.ps1'
+[4.711s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.dsv'
+[4.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.sh'
+[4.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.bash'
+[4.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.zsh'
+[4.718s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/colcon-core/packages/arduinobot_description)
+[4.801s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduinobot_description)
+[4.834s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description' for CMake module files
+[4.834s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description' for CMake config files
+[4.835s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduinobot_description', 'cmake_prefix_path')
+[4.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/hook/cmake_prefix_path.ps1'
+[4.871s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/hook/cmake_prefix_path.dsv'
+[4.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/hook/cmake_prefix_path.sh'
+[4.873s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/bin'
+[4.873s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/lib/pkgconfig/arduinobot_description.pc'
+[4.874s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/lib/python3.10/site-packages'
+[4.874s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/bin'
+[4.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.ps1'
+[4.909s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.dsv'
+[4.910s] INFO:colcon.colcon_core.shell:Creating package script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.sh'
+[4.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.bash'
+[4.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.zsh'
+[4.916s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_description/share/colcon-core/packages/arduinobot_description)
+[5.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/src/arduinobot_py_examples': PYTHONPATH=/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/prefix_override:/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/arduinobot_py_examples build --build-base /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/build install --record /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/install.log --single-version-externally-managed
+[5.406s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/src/arduinobot_py_examples' returned '0': PYTHONPATH=/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/prefix_override:/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/arduinobot_py_examples build --build-base /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/build install --record /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/install.log --single-version-externally-managed
+[5.427s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples' for CMake module files
+[5.427s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples' for CMake config files
+[5.428s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/lib'
+[5.428s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/bin'
+[5.428s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/lib/pkgconfig/arduinobot_py_examples.pc'
+[5.429s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages'
+[5.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduinobot_py_examples', 'pythonpath')
+[5.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples/hook/pythonpath.ps1'
+[5.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples/hook/pythonpath.dsv'
+[5.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples/hook/pythonpath.sh'
+[5.453s] Level 1:colcon.colcon_core.environment:checking '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/bin'
+[5.453s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduinobot_py_examples)
+[5.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples/package.ps1'
+[5.473s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples/package.dsv'
+[5.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples/package.sh'
+[5.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples/package.bash'
+[5.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples/package.zsh'
+[5.476s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/colcon-core/packages/arduinobot_py_examples)
+[5.476s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.477s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.477s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.477s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.502s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.502s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.502s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.515s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.542s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/local_setup.ps1'
+[5.544s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/_local_setup_util_ps1.py'
+[5.546s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/setup.ps1'
+[5.574s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/local_setup.sh'
+[5.575s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/_local_setup_util_sh.py'
+[5.576s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/setup.sh'
+[5.607s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/local_setup.bash'
+[5.608s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/setup.bash'
+[5.634s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/local_setup.zsh'
+[5.635s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/setup.zsh'

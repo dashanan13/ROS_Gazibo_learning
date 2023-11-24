@@ -1,0 +1,35 @@
+[0.881s] Invoking command in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/src/arduinobot_py_examples': PYTHONPATH=/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/prefix_override:/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/arduinobot_py_examples build --build-base /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/build install --record /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/install.log --single-version-externally-managed
+[1.141s] running egg_info
+[1.141s] creating ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info
+[1.144s] writing ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/PKG-INFO
+[1.144s] writing dependency_links to ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/dependency_links.txt
+[1.144s] writing entry points to ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/entry_points.txt
+[1.144s] writing requirements to ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/requires.txt
+[1.144s] writing top-level names to ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/top_level.txt
+[1.144s] writing manifest file '../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/SOURCES.txt'
+[1.146s] reading manifest file '../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/SOURCES.txt'
+[1.147s] writing manifest file '../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/SOURCES.txt'
+[1.147s] running build
+[1.147s] running build_py
+[1.147s] creating /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/build
+[1.147s] creating /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/build/lib
+[1.147s] creating /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/build/lib/arduinobot_py_examples
+[1.147s] copying arduinobot_py_examples/__init__.py -> /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/build/lib/arduinobot_py_examples
+[1.147s] running install
+[1.155s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.155s]   warnings.warn(
+[1.155s] running install_lib
+[1.155s] creating /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples
+[1.156s] copying /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/build/lib/arduinobot_py_examples/__init__.py -> /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples
+[1.156s] byte-compiling /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples/__init__.py to __init__.cpython-310.pyc
+[1.156s] running install_data
+[1.157s] creating /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/ament_index
+[1.157s] creating /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/ament_index/resource_index
+[1.157s] creating /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/ament_index/resource_index/packages
+[1.158s] copying resource/arduinobot_py_examples -> /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/ament_index/resource_index/packages
+[1.158s] copying package.xml -> /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples
+[1.158s] running install_egg_info
+[1.161s] Copying ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info to /home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples-0.0.0-py3.10.egg-info
+[1.164s] running install_scripts
+[1.182s] writing list of installed files to '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/install.log'
+[1.200s] Invoked command in '/home/mohit/ROS_Gazibo_learning/arduinobot_ws/src/arduinobot_py_examples' returned '0': PYTHONPATH=/home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/prefix_override:/home/mohit/ROS_Gazibo_learning/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/arduinobot_py_examples build --build-base /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/build install --record /home/mohit/ROS_Gazibo_learning/arduinobot_ws/build/arduinobot_py_examples/install.log --single-version-externally-managed
