@@ -1,7 +1,7 @@
+/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/components.xacro
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/snake.urdf
-/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/snake_urdf_working.xacro
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/snake_urdf.xacro
-/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/snake_urdf_not_working.xacro
+/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/common_properties.xacro
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//launch/display.launch.xml
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//launch/display.launch.py
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//rviz/urdf_config.rviz
