@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<robot name="origins">
+    
+    <material name="blue">
+        <color rgba="0 0 0.8 1"/>
+    </material>
+
+    <material name="white">
+        <color rgba="1 1 1 1"/>
+    </material>
+
+    <material name="red">
+        <color rgba="0.8 0 0 1"/>
+    </material>
+
+
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.6" radius="0.2"/>
+            </geometry>
+            <origin rpy="0 1.57075 1.57075" xyz="0 0 0.2"/>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <geometry>
+              <cylinder length="0.6" radius="0.2"/>
+            </geometry>
+          </collision>
+    </link>
+
+    <joint name="base_to_connector" type="revolute">
+        <axis xyz="0 0 1"/>
+        <limit effort="1000.0" lower="-1.5707" upper="1.5707" velocity="0.5"/>
+        <parent link="base_link"/>
+        <child link="connector1"/>
+        <origin xyz="0 0.5 0.2"/>
+    </joint>
+
+    <link name="connector1">
+        <visual>
+          <geometry>
+            <sphere radius="0.2"/>
+          </geometry>
+          <material name="red"/>
+        </visual>
+        <collision>
+            <geometry>
+                <sphere radius="0.2"/>
+            </geometry>
+          </collision>
+      </link>
+
+    <joint name="connector1_to_link1" type="fixed">
+        <parent link="connector1"/>
+        <child link="link1"/>
+        <origin xyz="0 0.2 0.0"/>
+    </joint>
+
+    <link name="link1">
+        <visual>
+            <geometry>
+                <cylinder length="0.6" radius="0.2"/>
+            </geometry>
+            <origin rpy="0 1.57075 1.57075" xyz="0 0.3 0"/>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+              <cylinder length="0.6" radius="0.2"/>
+            </geometry>
+          </collision>
+    </link>
+
+    <joint name="link1_to_connector2" type="revolute">
+        <axis xyz="0 0 1"/>
+        <limit effort="1000.0" lower="-1.5707" upper="1.5707" velocity="0.5"/>
+        <parent link="link1"/>
+        <child link="connector2"/>
+        <origin xyz="0 0.8 0.0"/>
+    </joint>
+    
+    <link name="connector2">
+        <visual>
+          <geometry>
+            <sphere radius="0.2"/>
+          </geometry>
+          <material name="red"/>
+        </visual>
+        <collision>
+            <geometry>
+                <sphere radius="0.2"/>
+            </geometry>
+          </collision>
+      </link>
+
+    <joint name="connector2_to_link2" type="fixed">
+        <parent link="connector2"/>
+        <child link="link2"/>
+        <origin xyz="0 0.2 0.0"/>
+    </joint>
+
+    <link name="link2">
+        <visual>
+            <geometry>
+                <cylinder length="0.6" radius="0.2"/>
+            </geometry>
+            <origin rpy="0 1.57075 1.57075" xyz="0 0.3 0"/>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <geometry>
+              <cylinder length="0.6" radius="0.2"/>
+            </geometry>
+          </collision>
+    </link>
+
+
+    <joint name="link2_to_connector3" type="revolute">
+        <axis xyz="0 0 1"/>
+        <limit effort="1000.0" lower="-1.5707" upper="1.5707" velocity="0.5"/>
+        <parent link="link2"/>
+        <child link="connector3"/>
+        <origin xyz="0 0.8 0.0"/>
+    </joint>
+
+    <link name="connector3">
+        <visual>
+          <geometry>
+            <sphere radius="0.2"/>
+          </geometry>
+          <material name="red"/>
+        </visual>
+        <collision>
+            <geometry>
+                <sphere radius="0.2"/>
+            </geometry>
+          </collision>
+      </link>
+
+    <joint name="connector3_to_link3" type="fixed">
+        <parent link="connector3"/>
+        <child link="link3"/>
+        <origin xyz="0 0.2 0.0"/>
+    </joint>
+
+    <link name="link3">
+        <visual>
+            <geometry>
+                <cylinder length="0.6" radius="0.2"/>
+            </geometry>
+            <origin rpy="0 1.57075 1.57075" xyz="0 0.3 0"/>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+              <cylinder length="0.6" radius="0.2"/>
+            </geometry>
+          </collision>
+    </link>
+
+</robot>

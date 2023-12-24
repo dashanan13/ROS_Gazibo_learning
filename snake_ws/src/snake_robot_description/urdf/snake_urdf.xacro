@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<robot name="snake robot" xmlns:xacro="http://ros.org/wiki/xacro">
+
+
+<xacro:property name="piperdius" value="0.2" />
+<xacro:property name="pipelen" value="0.6" />
+
+
+<xacro:macro name="connector_macro" params="postfix">
+    <link name="connector${postfix}">
+        <visual>
+          <geometry>
+            <sphere radius="${piperdius}"/>
+          </geometry>
+          <material name="red"/>
+        </visual>
+        <collision>
+            <geometry>
+                <sphere radius="${piperdius}"/>
+            </geometry>
+          </collision>
+      </link>
+</xacro:macro>
+
+<xacro:macro name="link_macro" params="name x_origin y_origin z_origin">
+    <link name="${name}">
+        <visual>
+            <geometry>
+                <cylinder length="${pipelen}" radius="${piperdius}"/>
+            </geometry>
+            <origin rpy="0 ${pi / 2.0} ${pi / 2.0}" xyz="${x_origin} ${y_origin} ${z_origin}"/>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length="${pipelen}" radius="${piperdius}"/>
+            </geometry>
+          </collision>
+    </link>
+</xacro:macro>
+
+<xacro:macro name="link_to_connector_macro" params="name x_origin y_origin z_origin parent child">
+    <joint name="${name}" type="revolute">
+        <axis xyz="0 0 1"/>
+        <limit effort="1000.0" lower="-${pi / 2.0}" upper="${pi / 2.0}" velocity="0.5"/>
+        <parent link="${parent}"/>
+        <child link="${child}"/>
+        <origin xyz="${x_origin} ${y_origin} ${z_origin}"/>
+    </joint>
+</xacro:macro>
+
+<xacro:macro name="connector_to_link_macro" params="name x_origin y_origin z_origin parent child">
+    <joint name="${name}" type="fixed">
+        <parent link="${parent}"/>
+        <child link="${child}"/>
+        <origin xyz="${x_origin} ${y_origin} ${z_origin}"/>
+    </joint>
+</xacro:macro>
+
+
+<material name="blue">
+    <color rgba="0 0 0.8 1"/>
+</material>
+
+<material name="white">
+    <color rgba="1 1 1 1"/>
+</material>
+
+<material name="red">
+    <color rgba="0.8 0 0 1"/>
+</material>
+
+
+<xacro:link_macro name="base_link" x_origin="0" y_origin="0" z_origin="0.2"/>
+
+<xacro:link_to_connector_macro name="base_to_connector" x_origin="0" y_origin="0.5" z_origin="0.2" parent="base_link" child="connector1"/>
+
+<xacro:connector_macro postfix="1" />
+
+<xacro:connector_to_link_macro name="connector1_to_link1" x_origin="0" y_origin="0.2" z_origin="0" parent="connector1" child="link1"/>
+
+
+<xacro:link_macro name="link1" x_origin="0" y_origin="0.3" z_origin="0"/>
+
+<xacro:link_to_connector_macro name="link1_to_connector2" x_origin="0" y_origin="0.8" z_origin="0" parent="link1" child="connector2"/>
+    
+<xacro:connector_macro postfix="2" />
+
+<xacro:connector_to_link_macro name="connector2_to_link2" x_origin="0" y_origin="0.2" z_origin="0" parent="connector2" child="link2"/>
+
+
+<xacro:link_macro name="link2" x_origin="0" y_origin="0.3" z_origin="0"/>
+
+<xacro:link_to_connector_macro name="link2_to_connector3" x_origin="0" y_origin="0.8" z_origin="0" parent="link2" child="connector3"/>
+
+<xacro:connector_macro postfix="3" />
+
+<xacro:connector_to_link_macro name="connector3_to_link3" x_origin="0" y_origin="0.2" z_origin="0" parent="connector3" child="link3"/>
+
+
+<xacro:link_macro name="link3" x_origin="0" y_origin="0.3" z_origin="0"/>
+
+
+</robot>
