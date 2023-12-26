@@ -5,3 +5,5 @@
 /snake_ws$/log/*
 /snake_ws$/build/*
 /snake_ws$/install/*
+
+/.ipynb_checkpoints/*
