@@ -2,17 +2,17 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
     
-    <xacro:property name="piperdius" value="0.2" />
-    <xacro:property name="pipelen" value="0.6" />
+    <xacro:property name="piperdius" value="0.1" />
+    <xacro:property name="pipelen" value="0.4" />
 
-    <xacro:macro name="link_macro" params="name x_origin y_origin z_origin">
+    <xacro:macro name="link_macro" params="name x_origin y_origin z_origin color">
         <link name="${name}">
             <visual>
                 <geometry>
                     <cylinder length="${pipelen}" radius="${piperdius}"/>
                 </geometry>
                 <origin rpy="0 ${pi / 2.0} ${pi / 2.0}" xyz="${x_origin} ${y_origin} ${z_origin}"/>
-                <material name="white"/>
+                <material name="${color}"/>
             </visual>
             <collision>
                 <geometry>
@@ -24,9 +24,19 @@
         </link>
     </xacro:macro>
 
-    <xacro:macro name="link_to_connector_macro" params="name x_origin y_origin z_origin parent child">
+    <xacro:macro name="link_to_link_Zaxis_macro" params="name x_origin y_origin z_origin parent child">
         <joint name="${name}" type="revolute">
             <axis xyz="0 0 1"/>
+            <limit effort="1000.0" lower="-${pi / 2.0}" upper="${pi / 2.0}" velocity="0.5"/>
+            <parent link="${parent}"/>
+            <child link="${child}"/>
+            <origin xyz="${x_origin} ${y_origin} ${z_origin}"/>
+        </joint>
+    </xacro:macro>
+
+    <xacro:macro name="link_to_link_Xaxis_macro" params="name x_origin y_origin z_origin parent child">
+        <joint name="${name}" type="revolute">
+            <axis xyz="1 0 0"/>
             <limit effort="1000.0" lower="-${pi / 2.0}" upper="${pi / 2.0}" velocity="0.5"/>
             <parent link="${parent}"/>
             <child link="${child}"/>
@@ -62,33 +72,30 @@
     </xacro:macro>
 
 
-    <xacro:link_macro name="base_link" x_origin="0" y_origin="0" z_origin="0.2"/>
 
-    <xacro:link_to_connector_macro name="base_to_connector" x_origin="0" y_origin="0.5" z_origin="0.2" parent="base_link" child="connector1"/>
+    <xacro:link_macro name="base_link" x_origin="0" y_origin="0" z_origin="${piperdius}" color="red"/>
 
-    <xacro:connector_macro postfix="1" />
+    <xacro:link_to_link_Zaxis_macro name="base_to_link1_Zaxis" x_origin="0" y_origin="${pipelen / 2}" z_origin="${piperdius}" parent="base_link" child="link1"/>
+    <xacro:link_macro name="link1" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="blue"/>
 
-    <xacro:connector_to_link_macro name="connector1_to_link1" x_origin="0" y_origin="0.2" z_origin="0" parent="connector1" child="link1"/>
+    <xacro:link_to_link_Xaxis_macro name="link1_to_link2_Xaxis" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="link1" child="link2"/>
+    <xacro:link_macro name="link2" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="red"/>
+    
+    <xacro:link_to_link_Zaxis_macro name="link2_to_link3_Zaxis" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="link2" child="link3"/>
+    <xacro:link_macro name="link3" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="blue"/>
 
+    <xacro:link_to_link_Xaxis_macro name="link3_to_link4_Xaxis" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="link3" child="link4"/>
+    <xacro:link_macro name="link4" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="red"/>
 
-    <xacro:link_macro name="link1" x_origin="0" y_origin="0.3" z_origin="0"/>
+    <xacro:link_to_link_Zaxis_macro name="link4_to_link5_Zaxis" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="link4" child="link5"/>
+    <xacro:link_macro name="link5" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="blue"/>
 
-    <xacro:link_to_connector_macro name="link1_to_connector2" x_origin="0" y_origin="0.8" z_origin="0" parent="link1" child="connector2"/>
-        
-    <xacro:connector_macro postfix="2" />
+    <xacro:link_to_link_Xaxis_macro name="link5_to_link6_Xaxis" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="link5" child="link6"/>
+    <xacro:link_macro name="link6" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="red"/>
 
-    <xacro:connector_to_link_macro name="connector2_to_link2" x_origin="0" y_origin="0.2" z_origin="0" parent="connector2" child="link2"/>
+    <xacro:link_to_link_Zaxis_macro name="link6_to_link7_Zaxis" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="link6" child="link7"/>
+    <xacro:link_macro name="link7" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="blue"/>
 
-
-    <xacro:link_macro name="link2" x_origin="0" y_origin="0.3" z_origin="0"/>
-
-    <xacro:link_to_connector_macro name="link2_to_connector3" x_origin="0" y_origin="0.8" z_origin="0" parent="link2" child="connector3"/>
-
-    <xacro:connector_macro postfix="3" />
-
-    <xacro:connector_to_link_macro name="connector3_to_link3" x_origin="0" y_origin="0.2" z_origin="0" parent="connector3" child="link3"/>
-
-
-    <xacro:link_macro name="link3" x_origin="0" y_origin="0.3" z_origin="0"/>
-
+    <xacro:link_to_link_Xaxis_macro name="link7_to_link8_Xaxis" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="link7" child="link8"/>
+    <xacro:link_macro name="link8" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="red"/>
 </robot>
