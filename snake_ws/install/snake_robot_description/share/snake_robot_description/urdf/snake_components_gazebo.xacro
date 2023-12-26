@@ -37,4 +37,30 @@
         <material>Gazebo/Red</material>
     </gazebo>
 
+
+    <gazebo>
+        <!-- Plugin introduced from https://github.com/ros-simulation/gazebo_ros_pkgs/blob/ros2/gazebo_plugins/include/gazebo_plugins/gazebo_ros_joint_state_publisher.hpp -->
+        <plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+            <!-- Update rate in Hertz -->
+            <update_rate>10</update_rate>
+
+            <!-- Name of joints in the model whose states will be published. -->
+            <joint_name>base_to_link1_Zaxis</joint_name>
+            <joint_name>link1_to_link2_Xaxis</joint_name>
+            <joint_name>link2_to_link3_Zaxis</joint_name>
+            <joint_name>link3_to_link4_Xaxis</joint_name>
+            <joint_name>link4_to_link5_Zaxis</joint_name>
+            <joint_name>link5_to_link6_Xaxis</joint_name>
+            <joint_name>link6_to_link7_Zaxis</joint_name>
+            <joint_name>link7_to_link8_Xaxis</joint_name>
+        </plugin>
+    </gazebo>
+
+    <gazebo>
+        <plugin name="gazebo_ros_joint_pose_trajectory" filename="libgazebo_ros_joint_pose_trajectory.so">
+            <!-- Update rate in Hz -->
+            <update_rate>2</update_rate>
+        </plugin>
+    </gazebo>
+
 </robot>
