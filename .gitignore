@@ -1,9 +1,12 @@
-/arduinobot_ws$/log/*
-/arduinobot_ws$/build/*
-/arduinobot_ws$/install/*
 
-/snake_ws$/log/*
-/snake_ws$/build/*
-/snake_ws$/install/*
 
-/.ipynb_checkpoints/*
+
+arduinobot_ws$/log/*
+arduinobot_ws$/build/*
+arduinobot_ws$/install/*
+
+snake_ws$/log/*
+snake_ws$/build/*
+snake_ws$/install/*
+
+.ipynb_checkpoints/*
