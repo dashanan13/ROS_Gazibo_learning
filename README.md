@@ -1,4 +1,4 @@
-This repository is dedicated to project to improvement of "SnakeSIM: a ROS-based Rapid-Prototyping Framework for Perception-Driven Obstacle-Aided Locomotion of Snake Robots" by Filippo Sanfilippo, Øyvind Stavdahl and Pal Liljeb.
+This repository is dedicated to a project aimed at improvement of "SnakeSIM: a ROS-based Rapid-Prototyping Framework for Perception-Driven Obstacle-Aided Locomotion of Snake Robots" by Filippo Sanfilippo, Øyvind Stavdahl and Pal Liljeb.
 Paper link: 
 https://filipposanfilippo.inspitivity.com/publications/sanfilippo-snakesim-a-ros-based-rapid-prototyping-framework-for-perception-driven-obstacle-aided-locomotion-of-snake-robots.pdf
 https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2494074
