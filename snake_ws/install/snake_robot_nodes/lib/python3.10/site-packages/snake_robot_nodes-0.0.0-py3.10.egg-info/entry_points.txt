@@ -1,0 +1,3 @@
+[console_scripts]
+py_node01 = snake_robot_nodes.node01:main
+

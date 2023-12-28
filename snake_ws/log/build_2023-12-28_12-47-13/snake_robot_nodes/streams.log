@@ -1,0 +1,24 @@
+[1.117s] Invoking command in '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/snake_robot_nodes': PYTHONPATH=/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/build/snake_robot_nodes/prefix_override:/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/snake_robot_nodes build --build-base /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/build/snake_robot_nodes/build install --record /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/build/snake_robot_nodes/install.log --single-version-externally-managed
+[1.592s] running egg_info
+[1.594s] writing ../../build/snake_robot_nodes/snake_robot_nodes.egg-info/PKG-INFO
+[1.594s] writing dependency_links to ../../build/snake_robot_nodes/snake_robot_nodes.egg-info/dependency_links.txt
+[1.595s] writing entry points to ../../build/snake_robot_nodes/snake_robot_nodes.egg-info/entry_points.txt
+[1.596s] writing requirements to ../../build/snake_robot_nodes/snake_robot_nodes.egg-info/requires.txt
+[1.596s] writing top-level names to ../../build/snake_robot_nodes/snake_robot_nodes.egg-info/top_level.txt
+[1.599s] reading manifest file '../../build/snake_robot_nodes/snake_robot_nodes.egg-info/SOURCES.txt'
+[1.602s] writing manifest file '../../build/snake_robot_nodes/snake_robot_nodes.egg-info/SOURCES.txt'
+[1.602s] running build
+[1.602s] running build_py
+[1.603s] copying snake_robot_nodes/node01.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/build/snake_robot_nodes/build/lib/snake_robot_nodes
+[1.603s] running install
+[1.604s] running install_lib
+[1.605s] copying /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/build/snake_robot_nodes/build/lib/snake_robot_nodes/node01.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes
+[1.606s] byte-compiling /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes/node01.py to node01.cpython-310.pyc
+[1.607s] running install_data
+[1.607s] running install_egg_info
+[1.609s] removing '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes-0.0.0-py3.10.egg-info' (and everything under it)
+[1.615s] Copying ../../build/snake_robot_nodes/snake_robot_nodes.egg-info to /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes-0.0.0-py3.10.egg-info
+[1.617s] running install_scripts
+[1.643s] Installing py_node01 script to /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_nodes/lib/snake_robot_nodes
+[1.645s] writing list of installed files to '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/build/snake_robot_nodes/install.log'
+[1.697s] Invoked command in '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/snake_robot_nodes' returned '0': PYTHONPATH=/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/build/snake_robot_nodes/prefix_override:/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/snake_robot_nodes build --build-base /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/build/snake_robot_nodes/build install --record /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/build/snake_robot_nodes/install.log --single-version-externally-managed
