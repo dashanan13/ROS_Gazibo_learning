@@ -9,6 +9,7 @@ setup.py
 ../../build/snake_robot_nodes/snake_robot_nodes.egg-info/top_level.txt
 ../../build/snake_robot_nodes/snake_robot_nodes.egg-info/zip-safe
 resource/snake_robot_nodes
+snake_robot_nodes/OOP_py_node_template.py
 snake_robot_nodes/__init__.py
 snake_robot_nodes/node01.py
 test/test_copyright.py

@@ -19,14 +19,12 @@ class MyNode01(Node):
         self.get_logger().info(result)
 
 
-
 def main(args=None):
     rclpy.init(args=args)
 
     node = MyNode01()
     rclpy.spin(node)
     rclpy.shutdown()
-
 
 
 if __name__ == "__main__":
