@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             "py_node01 = snake_robot_nodes.node01:main",
             "py_snakepubnode01 = snake_robot_nodes.publisher01:main",
-            "py_snakesubnode01 = snake_robot_nodes.subscriber01:main" 
+            "py_snakesubnode01 = snake_robot_nodes.subscriber01:main", 
+            "py_snakeserviceserver01 = snake_robot_nodes.serviceserver01:main" 
         ],
     },
 )

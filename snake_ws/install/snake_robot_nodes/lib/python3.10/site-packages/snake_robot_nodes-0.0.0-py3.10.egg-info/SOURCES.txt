@@ -13,6 +13,7 @@ snake_robot_nodes/OOP_py_node_template.py
 snake_robot_nodes/__init__.py
 snake_robot_nodes/node01.py
 snake_robot_nodes/publisher01.py
+snake_robot_nodes/serviceserver01.py
 snake_robot_nodes/subscriber01.py
 test/test_copyright.py
 test/test_flake8.py
