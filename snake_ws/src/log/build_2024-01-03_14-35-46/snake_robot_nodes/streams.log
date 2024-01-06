@@ -1,0 +1,56 @@
+[1.651s] Invoking command in '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/snake_robot_nodes': PYTHONPATH=/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/prefix_override:/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/snake_robot_nodes build --build-base /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build install --record /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/install.log --single-version-externally-managed
+[2.063s] running egg_info
+[2.064s] creating ../build/snake_robot_nodes/snake_robot_nodes.egg-info
+[2.071s] writing ../build/snake_robot_nodes/snake_robot_nodes.egg-info/PKG-INFO
+[2.071s] writing dependency_links to ../build/snake_robot_nodes/snake_robot_nodes.egg-info/dependency_links.txt
+[2.071s] writing entry points to ../build/snake_robot_nodes/snake_robot_nodes.egg-info/entry_points.txt
+[2.071s] writing requirements to ../build/snake_robot_nodes/snake_robot_nodes.egg-info/requires.txt
+[2.071s] writing top-level names to ../build/snake_robot_nodes/snake_robot_nodes.egg-info/top_level.txt
+[2.071s] writing manifest file '../build/snake_robot_nodes/snake_robot_nodes.egg-info/SOURCES.txt'
+[2.071s] reading manifest file '../build/snake_robot_nodes/snake_robot_nodes.egg-info/SOURCES.txt'
+[2.071s] writing manifest file '../build/snake_robot_nodes/snake_robot_nodes.egg-info/SOURCES.txt'
+[2.073s] running build
+[2.073s] running build_py
+[2.078s] creating /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build
+[2.078s] creating /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib
+[2.078s] creating /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes
+[2.078s] copying snake_robot_nodes/node01.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes
+[2.078s] copying snake_robot_nodes/OOP_py_node_template.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes
+[2.078s] copying snake_robot_nodes/serviceserver01.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes
+[2.078s] copying snake_robot_nodes/subscriber01.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes
+[2.078s] copying snake_robot_nodes/serviceclient01.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes
+[2.078s] copying snake_robot_nodes/publisher01.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes
+[2.078s] copying snake_robot_nodes/__init__.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes
+[2.078s] running install
+[2.078s] running install_lib
+[2.078s] creating /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes
+[2.079s] copying /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes/node01.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes
+[2.079s] copying /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes/OOP_py_node_template.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes
+[2.081s] copying /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes/serviceserver01.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes
+[2.081s] copying /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes/subscriber01.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes
+[2.082s] copying /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes/serviceclient01.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes
+[2.082s] copying /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes/publisher01.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes
+[2.082s] copying /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build/lib/snake_robot_nodes/__init__.py -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes
+[2.084s] byte-compiling /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes/node01.py to node01.cpython-310.pyc
+[2.084s] byte-compiling /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes/OOP_py_node_template.py to OOP_py_node_template.cpython-310.pyc
+[2.084s] byte-compiling /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes/serviceserver01.py to serviceserver01.cpython-310.pyc
+[2.086s] byte-compiling /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes/subscriber01.py to subscriber01.cpython-310.pyc
+[2.086s] byte-compiling /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes/serviceclient01.py to serviceclient01.cpython-310.pyc
+[2.086s] byte-compiling /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes/publisher01.py to publisher01.cpython-310.pyc
+[2.086s] byte-compiling /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes/__init__.py to __init__.cpython-310.pyc
+[2.087s] running install_data
+[2.089s] creating /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/share/ament_index
+[2.089s] creating /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/share/ament_index/resource_index
+[2.089s] creating /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/share/ament_index/resource_index/packages
+[2.089s] copying resource/snake_robot_nodes -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/share/ament_index/resource_index/packages
+[2.090s] copying package.xml -> /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/share/snake_robot_nodes
+[2.090s] running install_egg_info
+[2.092s] Copying ../build/snake_robot_nodes/snake_robot_nodes.egg-info to /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages/snake_robot_nodes-0.0.0-py3.10.egg-info
+[2.093s] running install_scripts
+[2.117s] Installing py_node01 script to /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/snake_robot_nodes
+[2.121s] Installing py_snakepubnode01 script to /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/snake_robot_nodes
+[2.122s] Installing py_snakeserviceclient01 script to /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/snake_robot_nodes
+[2.124s] Installing py_snakeserviceserver01 script to /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/snake_robot_nodes
+[2.124s] Installing py_snakesubnode01 script to /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/snake_robot_nodes
+[2.125s] writing list of installed files to '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/install.log'
+[2.184s] Invoked command in '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/snake_robot_nodes' returned '0': PYTHONPATH=/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/prefix_override:/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/snake_robot_nodes build --build-base /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/build install --record /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_nodes/install.log --single-version-externally-managed

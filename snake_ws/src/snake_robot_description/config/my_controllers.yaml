@@ -1,0 +1,46 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+    
+    effort_controllers:
+      type: effort_controllers/JointGroupEffortController
+
+joint_state_broadcaster:
+   ros__parameters:
+    joints:
+      - ${base_to_link1_Zaxis}
+      - ${link1_to_link2_Xaxis}
+      - ${link2_to_link3_Zaxis}
+      - ${link3_to_link4_Xaxis}
+      - ${link4_to_link5_Zaxis}
+      - ${link5_to_link6_Xaxis}
+      - ${link6_to_link7_Zaxis}
+      - ${link7_to_link8_Xaxis}
+
+effort_controllers:
+   ros__parameters:
+    joints:
+      - ${base_to_link1_Zaxis}
+      - ${link1_to_link2_Xaxis}
+      - ${link2_to_link3_Zaxis}
+      - ${link3_to_link4_Xaxis}
+      - ${link4_to_link5_Zaxis}
+      - ${link5_to_link6_Xaxis}
+      - ${link6_to_link7_Zaxis}
+      - ${link7_to_link8_Xaxis}
+
+    interface_name: effort
+    
+    command_interfaces:
+      - effort 
+    
+    state_interfaces:
+      - position
+      - velocity
+      - effort   
+    
+
+          

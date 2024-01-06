@@ -1,67 +1,101 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-    <gazebo reference="base_link">
-        <material>Gazebo/Red</material>
-    </gazebo>
+    <xacro:property name="base_to_link1_tran" value="base_to_link1_tran" />
+    <xacro:property name="link1_to_link2_tran" value="link1_to_link2_tran" />
+    <xacro:property name="link2_to_link3_tran" value="link2_to_link3_tran" />
+    <xacro:property name="link3_to_link4_tran" value="link3_to_link4_tran" />
+    <xacro:property name="link4_to_link5_tran" value="link4_to_link5_tran" />
+    <xacro:property name="link5_to_link6_tran" value="link5_to_link6_tran" />
+    <xacro:property name="link6_to_link7_tran" value="link6_to_link7_tran" />
+    <xacro:property name="link7_to_link8_tran" value="link7_to_link8_tran" />
 
-    <gazebo reference="link1">
-        <material>Gazebo/Blue</material>
-    </gazebo>
+    <xacro:property name="base_to_link1_motor" value="base_to_link1_motor" />
+    <xacro:property name="link1_to_link2_motor" value="link1_to_link2_motor" />
+    <xacro:property name="link2_to_link3_motor" value="link2_to_link3_motor" />
+    <xacro:property name="link3_to_link4_motor" value="link3_to_link4_motor" />
+    <xacro:property name="link4_to_link5_motor" value="link4_to_link5_motor" />
+    <xacro:property name="link5_to_link6_motor" value="link5_to_link6_motor" />
+    <xacro:property name="link6_to_link7_motor" value="link6_to_link7_motor" />
+    <xacro:property name="link7_to_link8_motor" value="link7_to_link8_motor" />
 
-    <gazebo reference="link2">
-        <material>Gazebo/Red</material>
-    </gazebo>
+    <!-- Macro to define transmission element -->
+    <xacro:macro name="joint_transmission_macro" params="tran_name motor_name joint_name">
+        <transmission name="${tran_name}">
+            <type>transmission_interface/SimpleTransmission</type>
+            <actuator name="${motor_name}">
+              <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+            <joint name="${joint_name}">
+              <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            </joint>
+          </transmission>
+    </xacro:macro>
 
-    <gazebo reference="link3">
-        <material>Gazebo/Blue</material>
-    </gazebo>
+    <!-- Macro to define ros_control element for joints -->
+    <xacro:macro name="ros_control_joint_macro" params="joint_name">
+        <joint name="${joint_name}">
+            <command_interface name="effort">
+                <param name="min">-200</param>
+                <param name="max">200</param>
+            </command_interface>
+            <state_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </xacro:macro>
 
-    <gazebo reference="link4">
-        <material>Gazebo/Red</material>
-    </gazebo>
+    <!-- Macro to define gazebo link reference element for joints -->
+    <xacro:macro name="gazebo_link_reference_macro" params="link_name gazebo_color_name">
+        <gazebo reference="${link_name}">
+            <material>${gazebo_color_name}</material>
+            <mu1>0.01</mu1>
+            <mu2>0.05</mu2>  
+        </gazebo>
+    </xacro:macro>
 
-    <gazebo reference="link5">
-        <material>Gazebo/Blue</material>
-    </gazebo>
 
-    <gazebo reference="link6">
-        <material>Gazebo/Red</material>
-    </gazebo>
+    <!-- Gazebo link reference definition with color definition -->
+    <xacro:gazebo_link_reference_macro link_name="${base_link}" gazebo_color_name="Gazebo/Red"/>
+    <xacro:gazebo_link_reference_macro link_name="${link1}" gazebo_color_name="Gazebo/Blue"/>
+    <xacro:gazebo_link_reference_macro link_name="${link2}" gazebo_color_name="Gazebo/Red"/>
+    <xacro:gazebo_link_reference_macro link_name="${link3}" gazebo_color_name="Gazebo/Blue"/>
+    <xacro:gazebo_link_reference_macro link_name="${link4}" gazebo_color_name="Gazebo/Red"/>
+    <xacro:gazebo_link_reference_macro link_name="${link5}" gazebo_color_name="Gazebo/Blue"/>
+    <xacro:gazebo_link_reference_macro link_name="${link6}" gazebo_color_name="Gazebo/Red"/>
+    <xacro:gazebo_link_reference_macro link_name="${link7}" gazebo_color_name="Gazebo/Blue"/>
+    <xacro:gazebo_link_reference_macro link_name="${link8}" gazebo_color_name="Gazebo/Red"/>
 
-    <gazebo reference="link7">
-        <material>Gazebo/Blue</material>
-    </gazebo>
+    <ros2_control name="GazeboSystem" type="system">
+    	<hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    	</hardware>
 
-    <gazebo reference="link8">
-        <material>Gazebo/Red</material>
-    </gazebo>
+        <xacro:ros_control_joint_macro joint_name="${base_to_link1_Zaxis}"/>
+        <xacro:ros_control_joint_macro joint_name="${link1_to_link2_Xaxis}"/>
+        <xacro:ros_control_joint_macro joint_name="${link2_to_link3_Zaxis}"/>
+        <xacro:ros_control_joint_macro joint_name="${link3_to_link4_Xaxis}"/>
+        <xacro:ros_control_joint_macro joint_name="${link4_to_link5_Zaxis}"/>
+        <xacro:ros_control_joint_macro joint_name="${link5_to_link6_Xaxis}"/>
+        <xacro:ros_control_joint_macro joint_name="${link6_to_link7_Zaxis}"/>
+        <xacro:ros_control_joint_macro joint_name="${link7_to_link8_Xaxis}"/>
 
-    <!-- Plugin introduced from https://github.com/ros-simulation/gazebo_ros_pkgs/blob/ros2/gazebo_plugins/include/gazebo_plugins/gazebo_ros_joint_state_publisher.hpp -->
-    <gazebo>
-        <!-- plugin to publish the states of the robot joints to generate TF -->
-        <plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
-            <!-- Update rate in Hertz -->
-            <update_rate>10</update_rate>
+    </ros2_control>
 
-            <!-- Name of joints in the model whose states will be published. -->
-            <joint_name>base_to_link1_Zaxis</joint_name>
-            <joint_name>link1_to_link2_Xaxis</joint_name>
-            <joint_name>link2_to_link3_Zaxis</joint_name>
-            <joint_name>link3_to_link4_Xaxis</joint_name>
-            <joint_name>link4_to_link5_Zaxis</joint_name>
-            <joint_name>link5_to_link6_Xaxis</joint_name>
-            <joint_name>link6_to_link7_Zaxis</joint_name>
-            <joint_name>link7_to_link8_Xaxis</joint_name>
+    <gazebo>               
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+        <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
+        <parameters>$(find snake_robot_description)/config/my_controllers.yaml</parameters>
         </plugin>
     </gazebo>
 
-    <gazebo>
-        <!-- plugin to set the states of the robot joints -->
-        <plugin name="gazebo_ros_joint_pose_trajectory" filename="libgazebo_ros_joint_pose_trajectory.so">
-            <!-- Update rate in Hz -->
-            <update_rate>2</update_rate>
-        </plugin>
-    </gazebo>
+    <xacro:joint_transmission_macro tran_name="${base_to_link1_tran}" motor_name="${base_to_link1_motor}" joint_name="${base_to_link1_Zaxis}"/>
+    <xacro:joint_transmission_macro tran_name="${link1_to_link2_tran}" motor_name="${link1_to_link2_motor}" joint_name="${link1_to_link2_Xaxis}"/>
+    <xacro:joint_transmission_macro tran_name="${link2_to_link3_tran}" motor_name="${link2_to_link3_motor}" joint_name="${link2_to_link3_Zaxis}"/>
+    <xacro:joint_transmission_macro tran_name="${link3_to_link4_tran}" motor_name="${link3_to_link4_motor}" joint_name="${link3_to_link4_Xaxis}"/>
+    <xacro:joint_transmission_macro tran_name="${link4_to_link5_tran}" motor_name="${link4_to_link5_motor}" joint_name="${link4_to_link5_Zaxis}"/>
+    <xacro:joint_transmission_macro tran_name="${link5_to_link6_tran}" motor_name="${link5_to_link6_motor}" joint_name="${link5_to_link6_Xaxis}"/>
+    <xacro:joint_transmission_macro tran_name="${link6_to_link7_tran}" motor_name="${link6_to_link7_motor}" joint_name="${link6_to_link7_Zaxis}"/>
+    <xacro:joint_transmission_macro tran_name="${link7_to_link8_tran}" motor_name="${link7_to_link8_motor}" joint_name="${link7_to_link8_Xaxis}"/>
 
 </robot>

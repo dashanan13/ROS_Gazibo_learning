@@ -5,8 +5,13 @@
     <xacro:property name="camera_width" value="0.02" />
     <xacro:property name="camera_height" value="0.05" />
 
+    <xacro:property name="camera_link" value="camera_link" />
+    <xacro:property name="camera_joint" value="link8_camera_joint" />
+    <xacro:property name="camera_sensor" value="camera_sensor" />
+    <xacro:property name="camera_controller" value="camera_controller" />
+
     <!-- link to hold camera -->
-    <link name="camera_link">
+    <link name="${camera_link}">
         <visual>
             <geometry>
                 <box size="${camera_length} ${camera_width} ${camera_height}" />
@@ -23,21 +28,21 @@
         <xacro:box_inertia m="0.1" l="${camera_length}" w="${camera_width}" h="${camera_height}" xyz="0 0 0" rpy="0 0 0" />
     </link>
 
-    <joint name="base_camera_joint" type="fixed">
-        <parent link="base_link" />
-        <child link="camera_link" />
+    <joint name="${camera_joint}" type="fixed">
+        <parent link="${link8}" />
+        <child link="${camera_link}" />
         <!-- the RPY is NOT 000 to make sure camera does not see inside ground but is over the surface -->
-        <origin xyz="0 -${(pipelen + camera_width) / 2} ${piperdius}" rpy="0 -${pi / 16.0} -${pi / 2.0}" />
+        <origin xyz="0 ${(pipelen + camera_width)} 0" rpy="0 -${pi / 17.0} ${pi / 2.0}" />
     </joint>
 
     <!-- camera plugin for gazebo -->
-    <gazebo reference="camera_link">
+    <gazebo reference="${camera_link}">
         <material>Gazebo/Red</material>
-        <sensor name="camera_sensor" type="camera">
+        <sensor name="${camera_sensor}" type="camera">
             <pose>0 0 0 0 0 0</pose>
             <visualize>true</visualize> 
             <update_rate>10.0</update_rate>
-            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+            <plugin name="${camera_controller}" filename="libgazebo_ros_camera.so">
                 <frame_name>camera_link</frame_name>
             </plugin>
         </sensor>

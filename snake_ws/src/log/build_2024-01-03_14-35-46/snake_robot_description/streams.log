@@ -1,0 +1,61 @@
+[0.134s] Invoking command in '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/snake_robot_description -DCMAKE_INSTALL_PREFIX=/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description
+[0.412s] -- The C compiler identification is GNU 11.4.0
+[0.595s] -- The CXX compiler identification is GNU 11.4.0
+[0.630s] -- Detecting C compiler ABI info
+[0.798s] -- Detecting C compiler ABI info - done
+[0.840s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.843s] -- Detecting C compile features
+[0.849s] -- Detecting C compile features - done
+[0.856s] -- Detecting CXX compiler ABI info
+[1.213s] -- Detecting CXX compiler ABI info - done
+[1.224s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.227s] -- Detecting CXX compile features
+[1.227s] -- Detecting CXX compile features - done
+[1.246s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.543s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.718s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.871s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.876s] -- Added test 'lint_cmake' to check CMake code style
+[1.881s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.893s] -- Added test 'xmllint' to check XML markup files
+[1.903s] -- Configuring done
+[1.917s] -- Generating done
+[1.923s] -- Build files have been written to: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_description
+[1.935s] Invoked command in '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/snake_robot_description -DCMAKE_INSTALL_PREFIX=/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description
+[1.935s] Invoking command in '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_description -- -j2 -l2
+[1.992s] Invoked command in '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_description -- -j2 -l2
+[2.061s] Invoking command in '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_description
+[2.077s] -- Install configuration: ""
+[2.077s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//urdf
+[2.078s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//urdf/snake.urdf
+[2.082s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//urdf/snake_camera.xacro
+[2.084s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//urdf/snake_urdf.xacro
+[2.087s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//urdf/snake_common_properties.xacro
+[2.089s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//urdf/snake_components.xacro
+[2.091s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//urdf/old
+[2.092s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//urdf/old/snake_urdf.xacro
+[2.094s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//urdf/old/snake_common_properties.xacro
+[2.096s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//urdf/old/snake_components.xacro
+[2.097s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//urdf/old/snake_components_gazebo.xacro
+[2.099s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//urdf/snake_components_gazebo.xacro
+[2.101s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//launch
+[2.102s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//launch/display.launch.xml
+[2.102s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//launch/display.launch.py
+[2.103s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//rviz
+[2.104s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description//rviz/urdf_config.rviz
+[2.106s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/ament_index/resource_index/package_run_dependencies/snake_robot_description
+[2.107s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/ament_index/resource_index/parent_prefix_path/snake_robot_description
+[2.108s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description/environment/ament_prefix_path.sh
+[2.110s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description/environment/ament_prefix_path.dsv
+[2.111s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description/environment/path.sh
+[2.117s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description/environment/path.dsv
+[2.117s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description/local_setup.bash
+[2.118s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description/local_setup.sh
+[2.118s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description/local_setup.zsh
+[2.118s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description/local_setup.dsv
+[2.119s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description/package.dsv
+[2.122s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/ament_index/resource_index/packages/snake_robot_description
+[2.123s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description/cmake/snake_robot_descriptionConfig.cmake
+[2.123s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description/cmake/snake_robot_descriptionConfig-version.cmake
+[2.129s] -- Installing: /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/install/snake_robot_description/share/snake_robot_description/package.xml
+[2.140s] Invoked command in '/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/build/snake_robot_description
