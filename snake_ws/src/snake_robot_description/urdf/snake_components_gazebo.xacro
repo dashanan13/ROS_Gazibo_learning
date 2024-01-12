@@ -14,7 +14,7 @@
     </gazebo>
 
     <gazebo reference="link3">
-        <material>Gazebo/Blue</material>
+        <material>Gazebo/Blue</material> 
     </gazebo>
 
     <gazebo reference="link4">
