@@ -13,6 +13,7 @@
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//launch/display.launch.xml
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//launch/display.launch.py
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//rviz/urdf_config.rviz
+/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//config/my_controllers.yaml
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/ament_index/resource_index/package_run_dependencies/snake_robot_description
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/ament_index/resource_index/parent_prefix_path/snake_robot_description
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description/environment/ament_prefix_path.sh

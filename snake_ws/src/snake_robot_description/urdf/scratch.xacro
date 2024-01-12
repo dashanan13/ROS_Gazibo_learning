@@ -48,7 +48,7 @@
     <!-- Macro to define gazebo link reference element for joints -->
     <xacro:macro name="gazebo_link_reference_macro" params="link_name gazebo_color_name">
         <gazebo reference="${link_name}">
-            <material>"${gazebo_color_name}"</material>
+            <material>${gazebo_color_name}</material>
             <mu1>0.01</mu1>
             <mu2>0.05</mu2>  
         </gazebo>
@@ -97,5 +97,5 @@
     <xacro:joint_transmission_macro tran_name="${link5_to_link6_tran}" motor_name="${link5_to_link6_motor}" joint_name="${link5_to_link6_Xaxis}"/>
     <xacro:joint_transmission_macro tran_name="${link6_to_link7_tran}" motor_name="${link6_to_link7_motor}" joint_name="${link6_to_link7_Zaxis}"/>
     <xacro:joint_transmission_macro tran_name="${link7_to_link8_tran}" motor_name="${link7_to_link8_motor}" joint_name="${link7_to_link8_Xaxis}"/>
-    
+
 </robot>
