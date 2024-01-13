@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
-<robot name="snake robot" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="${robot_name}" xmlns:xacro="http://ros.org/wiki/xacro">
 
-    <xacro:include filename="snake_common_properties.xacro" />
+    
+
+    <xacro:include filename="$(find snake_robot_description)/urdf/snake_common_properties.xacro" /> 
+    
+    <xacro:include filename="$(find snake_robot_description)/urdf/snake_ros2_control.xacro" /> 
 
     <xacro:include filename="snake_components.xacro" />
 

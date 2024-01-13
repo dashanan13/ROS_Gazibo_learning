@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="${robot_name}">
+
+    <xacro:property name="robot_name" value="snake_robot" />
 
     <!-- Define a color materials with RGBA color values -->
     <material name="blue">
