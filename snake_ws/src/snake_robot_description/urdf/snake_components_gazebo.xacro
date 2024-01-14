@@ -1,77 +1,71 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro" name="${robot_name}"> 
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="snake_robot"> 
 
-    <gazebo reference="base_link">
+    <gazebo reference="${base_link}">
         <material>Gazebo/Red</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
     </gazebo>
 
-    <gazebo reference="link1">
+    <gazebo reference="${link1}">
         <material>Gazebo/Blue</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
     </gazebo>
 
-    <gazebo reference="link2">
+    <gazebo reference="${link2}">
         <material>Gazebo/Red</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
     </gazebo>
 
-    <gazebo reference="link3">
+    <gazebo reference="${link3}">
         <material>Gazebo/Blue</material> 
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
     </gazebo>
 
-    <gazebo reference="link4">
+    <gazebo reference="${link4}">
         <material>Gazebo/Red</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
     </gazebo>
 
-    <gazebo reference="link5">
+    <gazebo reference="${link5}">
         <material>Gazebo/Blue</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
     </gazebo>
 
-    <gazebo reference="link6">
+    <gazebo reference="${link6}">
         <material>Gazebo/Red</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
     </gazebo>
 
-    <gazebo reference="link7">
+    <gazebo reference="${link7}">
         <material>Gazebo/Blue</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
     </gazebo>
 
-    <gazebo reference="link8">
+    <gazebo reference="${link8}">
         <material>Gazebo/Red</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
     </gazebo>
 
-    <!-- Plugin introduced from https://github.com/ros-simulation/gazebo_ros_pkgs/blob/ros2/gazebo_plugins/include/gazebo_plugins/gazebo_ros_joint_state_publisher.hpp -->
-    <gazebo>
-        <!-- plugin to publish the states of the robot joints to generate TF -->
-        <plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
-            <!-- Update rate in Hertz -->
-            <update_rate>10</update_rate>
 
-            <!-- Name of joints in the model whose states will be published. -->
-            <joint_name>base_to_link1_Zaxis</joint_name>
-            <joint_name>link1_to_link2_Xaxis</joint_name>
-            <joint_name>link2_to_link3_Zaxis</joint_name>
-            <joint_name>link3_to_link4_Xaxis</joint_name>
-            <joint_name>link4_to_link5_Zaxis</joint_name>
-            <joint_name>link5_to_link6_Xaxis</joint_name>
-            <joint_name>link6_to_link7_Zaxis</joint_name>
-            <joint_name>link7_to_link8_Xaxis</joint_name>
+    <!-- code for GAZEBO_ROS_CONTROL -->
+    <gazebo>
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so" > 
+            
+            <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
+
+            <parameters>$(find snake_robot_description)/config/snake_controllers.yaml</parameters>
+            
         </plugin>
     </gazebo>
 
-    <gazebo>
-        <!-- plugin to set the states of the robot joints -->
-        <plugin name="gazebo_ros_joint_pose_trajectory" filename="libgazebo_ros_joint_pose_trajectory.so">
-            <!-- Update rate in Hz -->
-            <update_rate>2</update_rate>
-        </plugin>
-    </gazebo>
-
-
-    <!-- code for ROS_CONTROL -->
-    <gazebo>
-        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control"> 
-            <robot_param>robot_description</robot_param>
-            <robot_param_node>robot_state_publisher</robot_param_node>
-            <parameters></parameters>
-        </plugin>
-    </gazebo>
 
 </robot>

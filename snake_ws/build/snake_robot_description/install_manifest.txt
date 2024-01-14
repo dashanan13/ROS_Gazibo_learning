@@ -1,5 +1,6 @@
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/snake.urdf
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/snake_camera.xacro
+/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/scratch.xacro
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/snake_urdf.xacro
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/snake_common_properties.xacro
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/snake_components.xacro
@@ -8,9 +9,12 @@
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/old/snake_components.xacro
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/old/snake_components_gazebo.xacro
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/snake_components_gazebo.xacro
+/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//urdf/snake_ros2_control.xacro
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//launch/display.launch.xml
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//launch/display.launch.py
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//rviz/urdf_config.rviz
+/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//config/snake_controllers.yaml
+/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description//worlds/empty.world
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/ament_index/resource_index/package_run_dependencies/snake_robot_description
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/ament_index/resource_index/parent_prefix_path/snake_robot_description
 /home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/install/snake_robot_description/share/snake_robot_description/environment/ament_prefix_path.sh

@@ -1,106 +1,121 @@
+CODE for: snake_components_gazebo.xacro
+
+
+
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro" name="${robot_name}">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="snake_robot"> 
 
-    <!-- Define variables for reuse -->
-    <xacro:property name="piperdius" value="0.1" />
-    <xacro:property name="pipelen" value="0.4" />
+    <gazebo reference="${base_link}">
+        <material>Gazebo/Red</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
+    </gazebo>
 
-    <!-- Property to define link names -->
-    <xacro:property name="base_link" value="base_link" />
-    <xacro:property name="link1" value="link1" />
-    <xacro:property name="link2" value="link2" />
-    <xacro:property name="link3" value="link3" />
-    <xacro:property name="link4" value="link4" />
-    <xacro:property name="link5" value="link5" />
-    <xacro:property name="link6" value="link6" />
-    <xacro:property name="link7" value="link7" />
-    <xacro:property name="link8" value="link8" />
+    <gazebo reference="${link1}">
+        <material>Gazebo/Blue</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
+    </gazebo>
 
-    <!-- Property to define joint names -->
-    <xacro:property name="base_to_link1_Zaxis" value="base_to_link1_Zaxis" />
-    <xacro:property name="link1_to_link2_Xaxis" value="link1_to_link2_Xaxis" />
-    <xacro:property name="link2_to_link3_Zaxis" value="link2_to_link3_Zaxis" />
-    <xacro:property name="link3_to_link4_Xaxis" value="link3_to_link4_Xaxis" />
-    <xacro:property name="link4_to_link5_Zaxis" value="link4_to_link5_Zaxis" />
-    <xacro:property name="link5_to_link6_Xaxis" value="link5_to_link6_Xaxis" />
-    <xacro:property name="link6_to_link7_Zaxis" value="link6_to_link7_Zaxis" />
-    <xacro:property name="link7_to_link8_Xaxis" value="link7_to_link8_Xaxis" />
+    <gazebo reference="${link2}">
+        <material>Gazebo/Red</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
+    </gazebo>
+
+    <gazebo reference="${link3}">
+        <material>Gazebo/Blue</material> 
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
+    </gazebo>
+
+    <gazebo reference="${link4}">
+        <material>Gazebo/Red</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
+    </gazebo>
+
+    <gazebo reference="${link5}">
+        <material>Gazebo/Blue</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
+    </gazebo>
+
+    <gazebo reference="${link6}">
+        <material>Gazebo/Red</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
+    </gazebo>
+
+    <gazebo reference="${link7}">
+        <material>Gazebo/Blue</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
+    </gazebo>
+
+    <gazebo reference="${link8}">
+        <material>Gazebo/Red</material>
+        <mu1>0.01</mu1>
+        <mu2>0.05</mu2>   
+    </gazebo>
+
+
+    <!-- camera plugin and link reference for gazebo -->
+    <gazebo reference="camera_link">
+        <material>Gazebo/Red</material>
+        <sensor name="camera_sensor" type="camera">
+            <pose>0 0 0 0 0 0</pose>
+            <visualize>true</visualize> 
+            <update_rate>10.0</update_rate>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <frame_name>camera_link</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+    <!-- code for GAZEBO_ROS_CONTROL -->
+    <gazebo>
+        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control"> 
+            <robot_param>robot_description</robot_param>
+            <robot_param_node>robot_state_publisher</robot_param_node>
+            
+            <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
+
+            <parameters>$(find snake_robot_description)/config/snake_controllers.yaml</parameters>
+        </plugin>
+    </gazebo>
+
     
 
+============================================================UNDER SCRUTINY============================================================
+    <!-- Plugin introduced from https://github.com/ros-simulation/gazebo_ros_pkgs/blob/ros2/gazebo_plugins/include/gazebo_plugins/gazebo_ros_joint_state_publisher.hpp -->
+    <gazebo>
+        <!-- plugin to publish the states of the robot joints to generate TF -->
+        <plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+            <!-- Update rate in Hertz -->
+            <update_rate>10</update_rate>
 
-    <!-- Define a macro to create a link with visual, collision, and inertia properties -->
-    <xacro:macro name="link_macro" params="name x_origin y_origin z_origin color">
-        <link name="${name}">
-            <visual>
-                <geometry>
-                    <cylinder length="${pipelen}" radius="${piperdius}"/>
-                </geometry>
-                <origin rpy="0 ${pi / 2.0} ${pi / 2.0}" xyz="${x_origin} ${y_origin} ${z_origin}"/>
-                <material name="${color}"/>
-            </visual>
-            <!-- Collision properties of the link -->
-            <collision>
-                <geometry>
-                    <cylinder length="${pipelen}" radius="${piperdius}"/>
-                </geometry>
-                <origin rpy="0 ${pi / 2.0} ${pi / 2.0}" xyz="${x_origin} ${y_origin} ${z_origin}"/>
-            </collision>
-            <!-- Inertia properties of the link -->
-            <xacro:cylinder_inertia  m="1" r="${piperdius}" h="${pipelen}" xyz="${x_origin} ${y_origin} ${z_origin}" rpy="0 ${pi / 2.0} ${pi / 2.0}"/>
-        </link>
-    </xacro:macro>
+            <!-- Name of joints in the model whose states will be published. -->
+            <joint_name>${base_to_link1_Zaxis_joint}</joint_name>
+            <joint_name>${link1_to_link2_Xaxis_joint}</joint_name>
+            <joint_name>${link2_to_link3_Zaxis_joint}</joint_name>
+            <joint_name>${link3_to_link4_Xaxis_joint}</joint_name>
+            <joint_name>${link4_to_link5_Zaxis_joint}</joint_name>
+            <joint_name>${link5_to_link6_Xaxis_joint}</joint_name>
+            <joint_name>${link6_to_link7_Zaxis_joint}</joint_name>
+            <joint_name>${link7_to_link8_Xaxis_joint}</joint_name>
+        </plugin>
+    </gazebo>
 
-    <!-- Define a macro to create a revolute joint along the Z-axis between two links -->
-    <xacro:macro name="link_to_link_Zaxis_joint_macro" params="name x_origin y_origin z_origin parent child">
-        <joint name="${name}" type="revolute">
-            <axis xyz="0 0 1"/>
-            <limit effort="1000.0" lower="-${pi / 2.0}" upper="${pi / 2.0}" velocity="0.5"/>
-            <parent link="${parent}"/>
-            <child link="${child}"/>
-            <origin xyz="${x_origin} ${y_origin} ${z_origin}"/>
-            <dynamics friction="0.05" damping="0.1" />
-        </joint>
-    </xacro:macro>
-    
-    <!-- Define a macro to create a revolute joint along the X-axis between two links -->
-    <xacro:macro name="link_to_link_Xaxis_joint_macro" params="name x_origin y_origin z_origin parent child">
-        <joint name="${name}" type="revolute">
-            <axis xyz="1 0 0"/>
-            <limit effort="1000.0" lower="-${pi / 2.0}" upper="${pi / 2.0}" velocity="0.5"/>
-            <parent link="${parent}"/>
-            <child link="${child}"/>
-            <origin xyz="${x_origin} ${y_origin} ${z_origin}"/>
-            <!--this needs to be investigated, it is adding friction etc-->
-            <dynamics friction="0.05" damping="0.1" />
-        </joint>
-    </xacro:macro>
+    <gazebo>
+        <!-- plugin to set the states of the robot joints -->
+        <plugin name="gazebo_ros_joint_pose_trajectory" filename="libgazebo_ros_joint_pose_trajectory.so">
+            <!-- Update rate in Hz -->
+            <update_rate>2</update_rate>
+        </plugin>
+    </gazebo>
 
 
-    <!-- Create the base link with red color -->
-    <xacro:link_macro name="${base_link}" x_origin="0" y_origin="0" z_origin="${piperdius}" color="red"/>
 
-    <!-- Create links, joints, and set their positions and colors -->
-    <xacro:link_to_link_Zaxis_joint_macro name="${base_to_link1_Zaxis}" x_origin="0" y_origin="${pipelen / 2}" z_origin="${piperdius}" parent="${base_link}" child="${link1}"/>
-    <xacro:link_macro name="${link1}" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="blue"/>
 
-    <xacro:link_to_link_Xaxis_joint_macro name="${link1_to_link2_Xaxis}" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="${link1}" child="${link2}"/>
-    <xacro:link_macro name="${link2}" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="red"/>
-    
-    <xacro:link_to_link_Zaxis_joint_macro name="${link2_to_link3_Zaxis}" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="${link2}" child="${link3}"/>
-    <xacro:link_macro name="${link3}" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="blue"/>
-
-    <xacro:link_to_link_Xaxis_joint_macro name="${link3_to_link4_Xaxis}" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="${link3}" child="${link4}"/>
-    <xacro:link_macro name="${link4}" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="red"/>
-
-    <xacro:link_to_link_Zaxis_joint_macro name="${link4_to_link5_Zaxis}" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="${link4}" child="${link5}"/>
-    <xacro:link_macro name="${link5}" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="blue"/>
-
-    <xacro:link_to_link_Xaxis_joint_macro name="${link5_to_link6_Xaxis}" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="${link5}" child="${link6}"/>
-    <xacro:link_macro name="${link6}" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="red"/>
-
-    <xacro:link_to_link_Zaxis_joint_macro name="${link6_to_link7_Zaxis}" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="${link6}" child="${link7}"/>
-    <xacro:link_macro name="${link7}" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="blue"/>
-
-    <xacro:link_to_link_Xaxis_joint_macro name="${link7_to_link8_Xaxis}" x_origin="0" y_origin="${pipelen}" z_origin="0" parent="${link7}" child="${link8}"/>
-    <xacro:link_macro name="${link8}" x_origin="0" y_origin="${pipelen / 2}" z_origin="0" color="red"/>
 </robot>

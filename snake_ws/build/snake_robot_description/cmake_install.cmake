@@ -47,6 +47,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/snake_robot_description/urdf"
     "/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/snake_robot_description/launch"
     "/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/snake_robot_description/rviz"
+    "/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/snake_robot_description/config"
+    "/home/mohit/GITHUBRepos/ROS_Gazibo_learning/snake_ws/src/snake_robot_description/worlds"
     )
 endif()
 
